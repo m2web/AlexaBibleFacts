@@ -6,8 +6,6 @@
         http://aws.amazon.com/apache2.0/
 
     or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-    
-    Thanks to https://github.com/deegles
 */
 
 /**
@@ -29,7 +27,7 @@ var APP_ID = undefined; //replace with "amzn1.echo-sdk-ams.app.[your-unique-valu
  * Array containing Bible facts.
  */
 var BIBLE_FACTS = [
-    "The Bible was written over a 1600 year period by approximately 40 men. The time of the writing was from 1500 BC to AD 100.",
+     "The Bible was written over a 1600 year period by approximately 40 men. The time of the writing was from 1500 BC to AD 100.",
     "While the Bible is 1 book, it contain 66 smaller books. The books of the Old Testament were written before the birth of Jesus Christ and the New Testament covers the life of Christ and beyond.",
     "Each of the books of the Bible, except 5, are divided into chapters and verses. The 5 which aren't divided by chapters are Obadiah, Philemon, 2 John, 3 John, and Jude. These are short books which only have verse divisions. Chapters were introduced to the Bible in 1238 by Cardinal Hugo de S. Caro. Verse divisions were not added until 1551 by Robertus Stephanus.",
     "The longest chapter if the Bible is Psalm 119 with 176 verses. The shortest chapter is Psalm 117 with only 2 verses. Incidentally, the middle chapter of the Bible is also Psalm 117. The longest book of the Bible is Psalms with 150 chapters, or psalms. It contains 43,743 words. The shortest book is  3 John with only 1 chapter and 299 words. The longest verse in the Bible is Esther 8:9 with 90 words. The shortest verse is John 11:35 with only 2 words, Jesus wept.",
@@ -42,9 +40,9 @@ var BIBLE_FACTS = [
     "The Bible attributes more than 3,000 proverbs to King Solomon. These are not all written in the book of Proverbs. However, most of that book is said to be the proverbs of Solomon.",
     "Only in recent years has science discovered that everything we see is composed of invisible atoms. Here, Scripture tells us that quote the things which are seen were not made of things which do appear unquote.",
     "Medical science has only recently discovered that blood-clotting in a newborn reaches its peak on the eighth day, then drops. The Bible consistently says that a baby must be circumcised on the eighth day.",
-    "At a time when it was believed that the earth sat on a large animal or a giant (1500 B.C.), the Bible spoke of the earth’s free float in space. Quote He hangs the earth upon nothing unquote in Job 26:7.",
+    "At a time when it was believed that the earth sat on a large animal or a giant (1500 B.C.), the Bible spoke of the earth's free float in space. Quote He hangs the earth upon nothing unquote in Job 26:7.",
     "The prophet Isaiah tells us that the earth is round. It is he that sits upon the circle of the earth Isaiah 40:22. This is not a reference to a flat disk, as some skeptic maintain, but to a sphere. Secular man discovered this 2,400 years later. At a time when science believed that the earth was  flat, is was the Scriptures that inspired Christopher Columbus to sail around the world.",
-    "God told Job in circa 1500 B.C. quote Can you send lightnings, that they may go, and say to you, Here we are? unquote in Job 38:35. The Bible here is making what appears to be a scientifically ludicrous statement—that light can be sent, and then manifest itself in speech. But did you know that radio waves travel at the speed of light? This is why you can have instantaneous wireless communication with someone on the other side of the earth. Science didn’t discover this until 1864 when British scientist James Clerk Maxwell suggested that electricity and light waves were two forms of the same thing.",
+    "God told Job in circa 1500 B.C. quote Can you send lightnings, that they may go, and say to you, Here we are? unquote in Job 38:35. The Bible here is making what appears to be a scientifically ludicrous statement that light can be sent, and then manifest itself in speech. But did you know that radio waves travel at the speed of light? This is why you can have instantaneous wireless communication with someone on the other side of the earth. Science didn't discover this until 1864 when British scientist James Clerk Maxwell suggested that electricity and light waves were two forms of the same thing.",
     "Job 38:19 asks, Where is the way where light dwells? Modern man has only recently discovered that light (electromagnetic radiation) has a kind of way, traveling at 186,000 miles per second.",
     "Science has discovered that stars emit radio waves, which are received on earth as a high pitch. God mentioned this in Job 38:7 When the morning stars sang together.",
     "Solomon described a cycle of air currents two thousand years before scientists discovered them. Quote The wind goes toward the south, and turns about unto the north; it whirls about continually, and the wind returns again according to his circuits unquote Ecclesiastes 1:6."
@@ -126,7 +124,6 @@ function handleNewFactRequest(response) {
 // Create the handler that responds to the Alexa Request.
 exports.handler = function (event, context) {
     // Create an instance of the BibleGeek skill.
-    var BibleGeek = new BibleGeek();
-    BibleGeek.execute(event, context);
+    var bibleGeek = new BibleGeek();
+    bibleGeek.execute(event, context);
 };
-
